@@ -1,11 +1,19 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React from "react";
+import data from "@/lib/mongo/data";
+import Image from "next/image";
+import Link from "next/link";
+import React, { Fragment, useEffect, useState } from "react";
 
-import { getSpaces } from "@lib/mongo/spaces";
+// import { getSpaces } from "@lib/mongo/spaces";
 
-function index({ spaces }) {
-  console.log(spaces);
+function Index() {
+  const [spaces, setSpaces] = useState(null);
+
+  useEffect(() => {
+    setSpaces(data.listings);
+  }, []);
+
   return (
     <>
       <Header />
@@ -55,7 +63,13 @@ function index({ spaces }) {
                     data-wow-duration="1500ms"
                   >
                     <div className="image">
-                      <img src="https://i.ibb.co/vQbkKj7/about.jpg" alt="" />
+                      <Image
+                        src={require("@public/images/about.jpg")}
+                        alt=""
+                        width="1000"
+                        height="1000"
+                        quality="100"
+                      />
                       <div className="overlay-box">
                         <div className="year-box">
                           <span className="number">5</span>Years <br />{" "}
@@ -76,29 +90,28 @@ function index({ spaces }) {
             <div className="container">
               <div className="row d-flex justify-content-center">
                 {spaces &&
-                  spaces.map((item, index) => (
-                    <div className="wrapper" key={index}>
-                      {/* <h1>THAILAND</h1> */}
-                      <div className="image i3"></div>
-                      <div className="details">
-                        <h1>{item?.name}</h1>
-                        <h2>{item?.description}</h2>
-                        <p>{item?.days}</p>
-                      </div>
-                      <h1>${item?.price}</h1>
-                    </div>
+                  spaces.map((item, i) => (
+                    <Fragment key={i}>
+                      <Link href={`${item.id}`} className="wrapper">
+                        {/* <h1>THAILAND</h1> */}
+                        <div className="image">
+                          <Image
+                            loader={({ src }) => src}
+                            src={item?.image}
+                            alt=""
+                            width="500"
+                            height="500"
+                            quality="100"
+                          />
+                        </div>
+                        <div className="details">
+                          <h2>{item?.name}</h2>
+                          <p>{item?.days}</p>
+                        </div>
+                        <h1>$120 per hour</h1>
+                      </Link>
+                    </Fragment>
                   ))}
-
-                <div className="wrapper">
-                  <h1>JAPAN</h1>
-                  <div className="image i3"></div>
-                  <div className="details">
-                    <h1>Tokyo</h1>
-                    <h2>Mandarin Oriental</h2>
-                    <p>3 Days - 2 Nights</p>
-                  </div>
-                  <h1>₹1250</h1>
-                </div>
               </div>
             </div>
           </section>
@@ -178,15 +191,15 @@ function index({ spaces }) {
   );
 }
 
-export async function getServerSideProps() {
-  // call disabled to show the error
-  const { spaces } = await getSpaces();
-  console.log(spaces);
-  return {
-    props: {
-      spaces: spaces, //returning an empty array to avoid other errors
-    },
-  };
-}
+// export async function getServerSideProps() {
+// call disabled to show the error
+// const { spaces } = await getSpaces();
+// console.log(spaces);
+// return {
+//   props: {
+//     spaces: spaces, //returning an empty array to avoid other errors
+//   },
+// };
+// }
 
-export default index;
+export default Index;

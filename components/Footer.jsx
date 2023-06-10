@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import logo from "@public/images/logo.jpeg";
 
 function Footer() {
   return (
@@ -7,13 +8,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-4">
-            <Image
-              alt=""
-              id="logo"
-              width={300}
-              height={200}
-              src="https://cnu.edu/_assets/svg/logo-white.svg"
-            />
+            <Image alt="" id="logo" width={200} height={700} src={logo} />
           </div>
 
           <div className="col-12 col-md-4">

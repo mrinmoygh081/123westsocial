@@ -34,13 +34,9 @@ function index() {
               <div className="magnific-img">
                 <a
                   className="image-popup-vertical-fit"
-                  href="./images/rooms-3.jpg"
+                  href="./images/air1.webp"
                 >
-                  <img
-                    src="./images/rooms-1.jpg"
-                    alt=""
-                    className="img-height"
-                  />
+                  <img src="./images/air1.webp" alt="" className="img-height" />
                 </a>
               </div>
             </div>
@@ -50,10 +46,10 @@ function index() {
                   <div className="magnific-img">
                     <a
                       className="image-popup-vertical-fit"
-                      href="./images/rooms-2.jpg"
+                      href="./images/air2.webp"
                     >
                       <img
-                        src="./images/rooms-2.jpg"
+                        src="./images/air2.webp"
                         alt=""
                         className="img-height"
                       />
@@ -64,10 +60,10 @@ function index() {
                   <div className="magnific-img">
                     <a
                       className="image-popup-vertical-fit"
-                      href="./images/rooms-3.jpg"
+                      href="./images/air3.webp"
                     >
                       <img
-                        src="./images/rooms-3.jpg"
+                        src="./images/air3.webp"
                         alt=""
                         className="img-height"
                       />
@@ -80,10 +76,10 @@ function index() {
                   <div className="magnific-img">
                     <a
                       className="image-popup-vertical-fit"
-                      href="./images/rooms-4.jpg"
+                      href="./images/air4.webp"
                     >
                       <img
-                        src="./images/rooms-4.jpg"
+                        src="./images/air4.webp"
                         alt=""
                         className="img-height"
                       />
@@ -94,10 +90,10 @@ function index() {
                   <div className="magnific-img">
                     <a
                       className="image-popup-vertical-fit"
-                      href="./images/rooms-5.jpg"
+                      href="./images/air5.webp"
                     >
                       <img
-                        src="./images/rooms-5.jpg"
+                        src="./images/air5.webp"
                         alt=""
                         className="img-height"
                       />
@@ -113,7 +109,7 @@ function index() {
           <div className="row">
             <div className="col-lg-8">
               <h2 className="font-family-Cormorant">
-                Entire villa hosted by Rini
+                Entire loft hosted by 123 West Social
               </h2>
               <div className="font-details text-secondary">
                 <span> 4 guests</span> . <span>2 Bedrooms</span> .{" "}
@@ -129,7 +125,7 @@ function index() {
                     <b>Dedicated workspace</b>
                   </h6>
                   <span className="text-secondary">
-                    Check yourself in with the keypad.
+                    A room with wifi that’s well suited for working.
                   </span>
                 </div>
               </div>
@@ -155,16 +151,16 @@ function index() {
 
               <hr />
               <div className="text-secondary">
+                <h3 style={{ color: "#fff" }}>How our space can be used?</h3>
                 <p>
-                  The charm of the place is the greenery surrounding the villa
-                  and the swimming pool.This place is home to 14 mango, 18
-                  coconut and many rare trees and plants. It’s a green haven
-                  away from the city’s hustle and bustle yet not so far from the
-                  heart of Kolkata.The villa has been designed to give a
-                  contemporary twist to a traditional farmhouse villa. The
-                  artwork on the wall and furniture have been hand made by the
-                  host herself. The mirrors and cabinets have been upcycled from
-                  old doors and windows.
+                  <b> Loft Apartment: </b>
+                  Located upstairs can be utilized for makeup/wardrobe,
+                  overnight stays, and more.
+                  <br />
+                  <b>Outside catering and bartending are welcome! </b> So you
+                  can adjust the event to your liking. Keep in mind that in this
+                  case, clients must submit the license or certificate for their
+                  bartender at least 7 days prior to their event.
                 </p>
               </div>
             </div>
@@ -174,7 +170,7 @@ function index() {
                 <div style={{ width: "100%" }}>
                   <div>
                     <div className="d-flex justify-content-between hotel_ratiog">
-                      <h4>₹14,000 night</h4>
+                      <h4>$120 per night</h4>
                       <p>
                         <span>
                           {" "}
@@ -194,20 +190,45 @@ function index() {
                           className="checkin_form checkin_form2"
                         />
                       </div>
-                      <select
+                      {/* <select
                         name="option"
                         className="checkin_form checkin_form3"
                       >
-                        <option value="option1">option1</option>
+                        <option value="4">4 Guests</option>
                         <option value="option2">option2</option>
                         <option value="option2">option3</option>
-                      </select>
+                      </select> */}
+                      <input
+                        type="text"
+                        className="form-control p-3 my-3"
+                        placeholder="Your Name"
+                      />
+                      <input
+                        type="text"
+                        className="form-control p-3 my-3"
+                        placeholder="Your Phone Number"
+                      />
+                      <input
+                        type="text"
+                        className="form-control p-3 my-3"
+                        placeholder="Your email"
+                      />
+                      <input
+                        type="text"
+                        className="form-control p-3 my-3"
+                        placeholder="Your Address"
+                      />
+                      <input
+                        type="number"
+                        className="form-control p-3 my-3"
+                        placeholder="Number Of Guests"
+                      />
                     </div>
                   </div>
 
                   <div className="btn-box center_btn">
                     <a href="#" className="theme-btn btn-style-one inner_btn">
-                      Change Dates
+                      Book Appointment
                     </a>
                   </div>
                 </div>
@@ -219,66 +240,117 @@ function index() {
         <div className="container mb-5 px-4 px-lg-0 overflow-hidden listing-item pading-res">
           <div className="row">
             <h2 className="font-family-Cormorant">
-              <b>What this place offers :</b>
+              <b>Additional Price Considerations:</b>
             </h2>
             <div className="col-lg-6 col-12">
               <div className="d-flex justify-content-between">
                 <div>
                   <div className="d-flex pt-3">
                     <div>
-                      <h5>Kitchen</h5>
+                      <h4>Security</h4>
+                      <h5>
+                        1 security guard is required for every 65 guests <br />
+                        <span>Charged at $30/hr per guard</span>
+                      </h5>
                     </div>
                   </div>
                   <div className="d-flex pt-3">
                     <div>
-                      <h5>Free on-street parking</h5>
+                      <h4>Host Fee</h4>
+                      <h5>
+                        A host is required to be present for all events. <br />
+                        <span>
+                          Charged at $20/hr. The fee may be waived for bookings
+                          during regular operating hours.
+                        </span>
+                      </h5>
                     </div>
                   </div>
                   <div className="d-flex pt-3">
                     <div>
-                      <h5>Air conditioning</h5>
-                    </div>
-                  </div>
-                  <div className="d-flex pt-3">
-                    <div>
-                      <h5>Refrigerator</h5>
-                    </div>
-                  </div>
-                  <div className="d-flex pt-3">
-                    <div>
-                      <h5>Carbon monoxide alarm</h5>
+                      <h4>Other costs to consider</h4>
+                      <h5>
+                        Bartender: A certified bartender is required to dispense
+                        all alcohol <br />
+                        Cleaning Service: All events will require a cleaning fee
+                        of $185 per booking. <br />
+                        <span>
+                          $150/hr with a 4-hour minimum also includes a deposit
+                          of $150
+                        </span>
+                      </h5>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-lg-6">
-              <div>
-                <div className="d-flex pt-0 pt-lg-5">
-                  <div>
-                    <h5>Wifi</h5>
-                  </div>
-                </div>
-                <div className="d-flex pt-3">
-                  <div>
-                    <h5>TV with standard cable/satellite</h5>
-                  </div>
-                </div>
-                <div className="d-flex pt-3">
-                  <div>
-                    <h5>Luggage drop-off allowed</h5>
-                  </div>
-                </div>
-                <div className="d-flex pt-3">
-                  <div>
-                    <h5>Microwave</h5>
-                  </div>
-                </div>
-                <div className="d-flex pt-3">
-                  <div>
-                    <h5>Smoke alarm</h5>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <div className="container mb-5 px-4 px-lg-0 overflow-hidden listing-item pading-res">
+          <div className="row">
+            <h2 className="font-family-Cormorant">
+              <b>Event Insurance Requirement:</b>
+            </h2>
+            <div className="col-lg-6 col-12">
+              <div className="text-secondary">
+                <p>
+                  We require insurance with each rental. As a partner, we
+                  recommend TheEventHelper.com to secure your insurance. They
+                  will assist you with the right insurance specifically for your
+                  event. Consider:
+                </p>
+                <ul>
+                  <li>
+                    <b>An additional insured party on the COl.</b>
+                  </li>
+                  <li>
+                    <b>
+                      Please ensure that host liquor liability coverage is
+                      included if you will have alcohol on site.
+                    </b>
+                  </li>
+                </ul>
+                <p>
+                  All bookings will be required to complete a Credit Card
+                  Authorization Form for the purpose of possible damages to the
+                  space. A refundable damage deposit may also be required.
+                </p>
+                <p>
+                  <i>
+                    *Rental rates and requirements are subject to change on
+                    Holidays, or Full Film Buyouts*
+                  </i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mb-5 px-4 px-lg-0 overflow-hidden listing-item pading-res">
+          <div className="row">
+            <h2 className="font-family-Cormorant">
+              <b>Add Ons for your Event:</b>
+            </h2>
+            <div className="col-lg-6 col-12">
+              <div className="text-secondary">
+                <ul>
+                  <li>
+                    <b>Customized Screen varies</b>
+                  </li>
+                  <li>
+                    <b>Colored Linen varies</b>
+                  </li>
+                  <li>
+                    <b>Chairs</b>
+                  </li>
+                  <li>
+                    <b>Security ($30/hr)</b>
+                  </li>
+                  <li>
+                    <b>Loft Apartment ($30/hr)</b>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -296,9 +368,9 @@ function index() {
                   width="100%"
                   height="450"
                   style={{ border: "0" }}
-                  allowfullscreen=""
+                  allowFullScreen=""
                   loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
               <div>

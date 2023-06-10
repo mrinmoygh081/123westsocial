@@ -34,9 +34,7 @@ function index() {
               </div>
               <div className="bottom-text">
                 <p>
-                  Fixyman is proud to be the name that nearly 1 million
-                  homeowners have trusted since 1996 for home improvement and
-                  repair, providing virtually any home repair.
+                Every experience requires personalized attention, and we want to make sure everything is exactly how you need it!
                 </p>
               </div>
             </div>
@@ -66,12 +64,12 @@ function index() {
                     <span className="path20"></span>
                   </span>
                 </div>
-                <h3>Lorem Ipsum</h3>
-                <h2>Lorem Ipsum is simply dummy</h2>
+                <h3>We are located at 123 W Solomon Street Griffin, GA 30223</h3>
+                <h2>Get in touch with us so we can start planning your next event!</h2>
               </div>
 
               <div className="col-sm-4 single-contact-address-box main-branch">
-                <h3>Lorem Ipsum</h3>
+                <h3>123 WEST SOCIAL</h3>
                 <div className="inner">
                   <ul>
                     <li>
@@ -80,18 +78,17 @@ function index() {
                       </div>
                       <div className="text">
                         <p>
-                          Lorem Ipsum, 40C, Lorem Ipsum dummy,
-                          <br /> Lorem Ipsum, Ch 98054
+                        123 W Solomon Street Griffin, GA 30223
                         </p>
                       </div>
                     </li>
                     <li>
                       <div className="title">
-                        <h4>Ph & Fax:</h4>
+                        <h4>Ph & Email</h4>
                       </div>
                       <div className="text">
                         <p>
-                          +123 456 789 <br /> test@info.com
+                        678. 782. 0083 <br /> 123westsocial@gmail.com
                         </p>
                       </div>
                     </li>
@@ -101,8 +98,7 @@ function index() {
                       </div>
                       <div className="text">
                         <p>
-                          Mon-Fri: 9:30am - 6:30pm
-                          <br /> Sat-Sun: Closed
+                        Mon-Thur: 10am - 11pm <br /> Fri- Sun: 10am - 2am
                         </p>
                       </div>
                     </li>
@@ -118,8 +114,8 @@ function index() {
                     <span className="path4"></span>
                   </span>
                 </div>
-                <h3>Lorem Ipsum</h3>
-                <h2>Lorem Ipsum is simply dummy</h2>
+                <h3>Immersive experiences that put you in the middle of the action</h3>
+                <h2>At 123 West Social, the sky is the limit. Wait, there is no limit!</h2>
               </div>
             </div>
           </div>
@@ -145,8 +141,7 @@ function index() {
                       </div>
                       <div className="text-box float-right">
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
+                        Reach out so we can get all your details sorted out! Fill this contact form so we can answer any questions and let's get started
                         </p>
                       </div>
                     </div>

@@ -39,7 +39,7 @@ export default function Home() {
                               <input
                                 className="form-control"
                                 type="text"
-                                placeholder="Enter a city or address"
+                                placeholder="Location"
                               />
                             </div>
                           </div>
@@ -49,7 +49,7 @@ export default function Home() {
                               <input
                                 className="form-control"
                                 type="text"
-                                placeholder="Anytime"
+                                placeholder="Date"
                               />
                             </div>
                           </div>
@@ -58,7 +58,7 @@ export default function Home() {
                       <div className="col-md-4">
                         <div className="form-btn">
                           <button className="submit-btn">
-                            Check availability
+                            Book Now
                           </button>
                         </div>
                       </div>
@@ -109,32 +109,25 @@ export default function Home() {
           <div className="row my-50">
             <div className="col-12">
               <div className="sec-title">
-                <span className="title">Our Future Goal</span>
-                <h2>We want to lead in innovation & Technology</h2>
+                <span className="title">123 West Social</span>
+                <h2>The future is here, and 123 West Social is how you get there.</h2>
               </div>
               <div className="text">
-                We works on UI/UX and functionality as well so that a plugins
-                comes with proper stucture & stunning looks which suits to your
-                web app & website.
+              A social, interactive, and high-tech environment that allows you to be anywhere you want in a virtual world that takes reality one step forward.
               </div>
               <div className="text">
-                We take a small toolkit here and ride it well so that it is fit
-                for your use. One who performs well and looks even better.
+              We use technology to create an innovative illusion so you can experience the world and "travel" anywhere. You can feel different atmospheres globally through our simulation and enjoy the space with your friends and family, or even shift a way of doing corporate events. 
               </div>
               <div className="text">
-                Here we are trying to give you all kinds of technical content,
-                whether it is related to designing or functionality. We are
-                creating content on a lot of languages and will continue to make
-                it free of cost even if you use it without any problem. Which is
-                a very important thing.
+              123 West Social creates immersive experiences that open the possibility of visiting and touring any place you dream of. By enhancing your sense of immersion and the correct implementation of realistic illusions, we are bringing new levels of emotional intensity to your "travels." 
               </div>
               <div className="text">
-                Here you can also share the content you create, if our technical
-                team likes it, then we will also share it on our blog.
-              </div>
+                {/* Here you can also share the content you create, if our technical
+                team likes it, then we will also share it on our blog. */}
+              {/* </div>
               <div className="text">
                 In the end, I would say keep visiting our website and enjoy the
-                quality content.
+                quality content. */}
               </div>
             </div>
           </div>
@@ -147,20 +140,16 @@ export default function Home() {
                 <div className="row ">
                   <div className="col-12 p-5">
                     <div className="sec-title">
-                      <span className="title">Our Future Goal</span>
+                      <span className="title">Live your dream life conveniently and unusually at 123 West Social. You can experience being in more than one place at a time without taking a plane or a road trip. </span>
                       <h2 style={{ color: "#121212", fontSize: "60px" }}>
-                        We want to lead in innovation & Technology
+                        OUR MISSION
                       </h2>
                     </div>
                     <div className="text" style={{ color: "#121212" }}>
-                      We works on UI/UX and functionality as well so that a
-                      plugins comes with proper stucture & stunning looks which
-                      suits to your web app & website.
+                    Our mission is to create a next-generation social experience that brings people together in new ways and utilizes technology in a fun way. 
                     </div>
                     <div className="text" style={{ color: "#121212" }}>
-                      We take a small toolkit here and ride it well so that it
-                      is fit for your use. One who performs well and looks even
-                      better.
+                    Our goal is to bring you into a world where you can experience the feeling of traveling anywhere around the globe and feel like you are there. It will feel so realistic that you'll even want to check that place off your bucket list. 
                     </div>
                   </div>
                 </div>
@@ -178,7 +167,7 @@ export default function Home() {
           <div className="row my-50 border-dashed ">
             <div className="col-12 p-5">
               <h2 className="page_heading">
-                Find a space,Fullfill your vision
+              A unique experience for your next event 
               </h2>
             </div>
           </div>
@@ -196,20 +185,25 @@ export default function Home() {
                 <div className="row ">
                   <div className="col-12 p-5">
                     <div className="sec-title">
-                      <span className="title">Our Future Goal</span>
+                      <span className="title">At 123 West Social, the sky is the limit. Wait, there is no limit!</span>
                       <h2 style={{ color: "#121212", fontSize: "60px" }}>
-                        We want to lead in innovation & Technology
+                      Why choose 123 West Social? 
                       </h2>
                     </div>
                     <div className="text" style={{ color: "#121212" }}>
-                      We works on UI/UX and functionality as well so that a
-                      plugins comes with proper stucture & stunning looks which
-                      suits to your web app & website.
+                    You can count on 123 West Social to provide a fun and original experience for your next dinner party, game night, birthday party, corporate function, or impromptu family gathering, and turn your next weekend hangout into an epic experience! 
                     </div>
                     <div className="text" style={{ color: "#121212" }}>
-                      We take a small toolkit here and ride it well so that it
-                      is fit for your use. One who performs well and looks even
-                      better.
+                    123 West Social is an immersive social space that comes to life as a result of the passion of Homemade Tomato Developers. We are a team of creative designers, realtors, and engineers who are passionate about creating the ultimate experience for consumers. 
+                    </div>
+                    <div className="text" style={{ color: "#121212" }}>
+                    Our team of developers is dedicated to creating an experience that will blow your mind.
+                    </div>
+                    <div className="text" style={{ color: "#121212" }}>
+                    We aim to provide an engaging and realistic environment in which people can interact with one another as if they were in real life visiting someplace else. 
+                    </div>
+                    <div className="text" style={{ color: "#121212" }}>
+                    Our venue is perfect for hosting your next party or corporate event. We have everything you need!
                     </div>
                   </div>
                 </div>

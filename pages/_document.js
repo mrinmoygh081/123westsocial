@@ -19,7 +19,6 @@ export default function Document() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/style.css" />
       </Head>
       <body>
         <Main />

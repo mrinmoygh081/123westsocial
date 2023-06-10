@@ -2,27 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "@public/images/logo.jpeg";
+import data from "@/lib/mongo/data";
+import { useRouter } from "next/router";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const toggle = () => setIsMenuOpen(!isMenuOpen);
+  const router = useRouter();
 
   useEffect(() => {
     setIsMenuOpen(false);
-  }, []);
+  }, [router.asPath]);
 
   return (
     <>
       <header className="large_device_menu">
         <div className="logo" id="logo">
-          <a href="index.html">
+          <Link href="/">
             <Image
               src={logo}
               width={100}
               height={100}
               alt="123westsocial logo"
             />
-          </a>
+          </Link>
         </div>
         <div
           className={
@@ -46,7 +49,7 @@ function Header() {
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/details">Details</Link>
+                    <Link href="/details">Loft Appartment</Link>
                   </li>
                   <li>
                     <Link href="/contact">Contact</Link>
@@ -59,30 +62,13 @@ function Header() {
                     <Link href="/spaces">Spaces</Link>
                   </li>
                   <ul>
-                    <li>
-                      <a href="prototype-packaging.html">Prototype Packaging</a>
-                    </li>
-                    <li>
-                      <a href="ux-branding-solutions.html">
-                        UX Design / Branding
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">Web Development</a>
-                    </li>
-                    <li>
-                      <a href="digital-transformation.html">
-                        Digital Consultancy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="application-development-solutions.html">
-                        Enterprise Applications Dev
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">Data Insights</a>
-                    </li>
+                    {data &&
+                      data.listings &&
+                      data.listings.map((item, i) => (
+                        <li key={i}>
+                          <Link href={`${item.id}`}>{item.name}</Link>
+                        </li>
+                      ))}
                   </ul>
                 </ul>
               </div>

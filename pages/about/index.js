@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Link from "next/link";
 import React from "react";
 
 function index() {
@@ -24,29 +25,31 @@ function index() {
               <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
                 <div className="inner-column">
                   <div className="sec-title">
-                    <span className="title">About Css3transition</span>
-                    <h2>We are Creative Tech Enthusiast working since 2015</h2>
+                    <span className="title">ABOUT 123 WEST SOCIAL</span>
+                    <h2>A unique experience for your next event</h2>
                   </div>
                   <div className="text">
-                    I am Rahul Yaduvanshi works at Css3 Transition since last 3
-                    years. We are here to provide touch notch solution for your
-                    website or web application that helps you to make your
-                    website look attractive & efficient in handling by creating
-                    usefull plugins thats you need.
+                    Whether you’re looking for something to cool the heat of the
+                    summer or want to escape the confines of your desk, 123 West
+                    Social is for everyone. Step into our space, grab a
+                    refreshment and make your way into a virtual world.
                   </div>
                   <div className="text">
-                    We are here to serve you next level tutorial that currently
-                    in trend to match you with your expertise. Css3 transition
-                    is a learning website. where you can find many good quality
-                    content related to web development and tutorials about
-                    plugins. here we are using html, html5, css, css3, jquery &
-                    javascript along with inspirational UI design layout by
-                    professionals by using Photoshop and adobe allustrator.
+                    We showcase technology that transforms entertainment, and
+                    possibilities into a unique experience. 123 West Social has
+                    been designed to create a more immersive experience, where
+                    people can be transported to another time or place. This is
+                    done through illusion by using technology that will change
+                    the appearance of the space to a partial simulation of your
+                    ideal location. We offer a range of options to host various
+                    events and ensure it’s all specific to your needs. Whether
+                    you want to throw a party for your child’s birthday or book
+                    an event for your company, we have something for everyone.
                   </div>
                   <div className="btn-box">
-                    <a href="#" className="theme-btn btn-style-one">
+                    <Link href="/contact" className="theme-btn btn-style-one">
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -75,34 +78,43 @@ function index() {
               <div className="row">
                 <div className="col-12">
                   <div className="sec-title">
-                    <span className="title">Our Future Goal</span>
-                    <h2>We want to lead in innovation & Technology</h2>
+                    <span className="title">
+                      Get To Know More About Us, How The Space Works, And More
+                    </span>
+                    <h2>
+                      Turn your game night into an epic event at 123 West Social
+                    </h2>
                   </div>
                   <div className="text">
-                    We works on UI/UX and functionality as well so that a
-                    plugins comes with proper stucture & stunning looks which
-                    suits to your web app & website.
+                    We know you&apos;re looking for something fun to do with
+                    your friends, so let our team of experts help you create an
+                    unforgettable experience at 123 West Social. We have the
+                    perfect combination of elements, amenities, entertainment,
+                    and fun to make your next event successful.
                   </div>
                   <div className="text">
-                    We take a small toolkit here and ride it well so that it is
-                    fit for your use. One who performs well and looks even
-                    better.
+                    You can explore the world&apos;s most amazing cities within
+                    the space and make a spectacular game night by taking it
+                    vintage and playing Tik Tak Toe and Corn Hull. You can use
+                    our ice machine and store everything you need in the
+                    refrigerator that&apos;s provided, so you are all set!
                   </div>
                   <div className="text">
-                    Here we are trying to give you all kinds of technical
-                    content, whether it is related to designing or
-                    functionality. We are creating content on a lot of languages
-                    and will continue to make it free of cost even if you use it
-                    without any problem. Which is a very important thing.
+                    We know most smartphones can take professional photos now.
+                    Still, nothing beats using our photo booth to create
+                    memories and preserve your fantastic gathering!
                   </div>
                   <div className="text">
-                    Here you can also share the content you create, if our
-                    technical team likes it, then we will also share it on our
-                    blog.
+                    A uniquely designed, private, multi-purpose entertainment
+                    venue. 123 West Social is where people can come together to
+                    experience entertainment, culture, and education.
                   </div>
                   <div className="text">
-                    In the end, I would say keep visiting our website and enjoy
-                    the quality content.
+                    The space has been designed to create a more immersive
+                    experience where people can be transported to another time
+                    or place. This is done through illusion by using technology
+                    that will change the appearance of the space to a partial
+                    simulation of your ideal location.
                   </div>
                 </div>
               </div>
@@ -125,18 +137,18 @@ function index() {
                 <div id="contact">
                   <h1>Connect</h1>
                   <address>
-                    Office of Admission
+                    AN EVENT SPACE THAT TAKES YOU ANYWHERE
                     <br />
-                    One Avenue of the Arts
+                    REVOLUTIONIZE YOUR SOCIAL EVENTS
                     <br />
-                    Newport News, VA 23606
+                    123 w. SOLOMAN ST. GRIFFIN
                   </address>
                   <p>
-                    <strong>Phone</strong>: (757) 594-7015
+                    <strong>Phone</strong>: (678) 782-0083
                     <br />
                     <strong>Email</strong>:{" "}
                     <a href="mailto:admit@cnu.edu" target="_blank">
-                      admit@cnu.edu
+                      123westsocial@gmail.com
                     </a>
                     <br />{" "}
                     <a
@@ -159,22 +171,24 @@ function index() {
                         href="https://admit.cnu.edu/register/?id=bb901bd9-ff61-4ff8-8d3e-d36a181f8548"
                         target="_blank"
                       >
-                        Request Admission Information
+                        HOME
                       </a>
                     </li>
 
                     <li>
-                      <a href="https://cnu.edu/families/">For Families</a>
+                      <a href="https://cnu.edu/families/">ABOUT</a>
                     </li>
                     <li>
                       <a href="#">FAQ</a>
                     </li>
                     <li>
-                      <a href="https://cnu.edu/visit/campusmap/">Campus Map</a>
+                      <a href="https://cnu.edu/visit/campusmap/">
+                        LOFT APARTMENT
+                      </a>
                     </li>
                     <li>
                       <a href="https://cnu.edu/public/index.html">
-                        Public Information &amp; Policies
+                        Privacy &amp; Policies
                       </a>
                     </li>
                   </ul>
@@ -184,8 +198,8 @@ function index() {
             <div className="row">
               <div className="col-12" id="copyright">
                 <p className="text-center">
-                  <i className="far fa-copyright"></i> &nbsp; Christopher
-                  Newport University | All Rights Reserved
+                  <i className="far fa-copyright"></i> &nbsp; 123 WEST SOCIAL |
+                  All Rights Reserved
                 </p>
               </div>
             </div>
