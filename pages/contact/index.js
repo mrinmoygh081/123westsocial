@@ -34,7 +34,8 @@ function index() {
               </div>
               <div className="bottom-text">
                 <p>
-                Every experience requires personalized attention, and we want to make sure everything is exactly how you need it!
+                  Every experience requires personalized attention, and we want
+                  to make sure everything is exactly how you need it!
                 </p>
               </div>
             </div>
@@ -64,8 +65,12 @@ function index() {
                     <span className="path20"></span>
                   </span>
                 </div>
-                <h3>We are located at 123 W Solomon Street Griffin, GA 30223</h3>
-                <h2>Get in touch with us so we can start planning your next event!</h2>
+                <h3>
+                  We are located at 123 W Solomon Street Griffin, GA 30223
+                </h3>
+                <h2>
+                  Get in touch with us so we can start planning your next event!
+                </h2>
               </div>
 
               <div className="col-sm-4 single-contact-address-box main-branch">
@@ -77,9 +82,7 @@ function index() {
                         <h4>Address:</h4>
                       </div>
                       <div className="text">
-                        <p>
-                        123 W Solomon Street Griffin, GA 30223
-                        </p>
+                        <p>123 W Solomon Street Griffin, GA 30223</p>
                       </div>
                     </li>
                     <li>
@@ -88,7 +91,7 @@ function index() {
                       </div>
                       <div className="text">
                         <p>
-                        678. 782. 0083 <br /> 123westsocial@gmail.com
+                          678. 782. 0083 <br /> 123westsocial@gmail.com
                         </p>
                       </div>
                     </li>
@@ -98,7 +101,7 @@ function index() {
                       </div>
                       <div className="text">
                         <p>
-                        Mon-Thur: 10am - 11pm <br /> Fri- Sun: 10am - 2am
+                          Mon-Thur: 10am - 11pm <br /> Fri- Sun: 10am - 2am
                         </p>
                       </div>
                     </li>
@@ -114,8 +117,13 @@ function index() {
                     <span className="path4"></span>
                   </span>
                 </div>
-                <h3>Immersive experiences that put you in the middle of the action</h3>
-                <h2>At 123 West Social, the sky is the limit. Wait, there is no limit!</h2>
+                <h3>
+                  Immersive experiences that put you in the middle of the action
+                </h3>
+                <h2>
+                  At 123 West Social, the sky is the limit. Wait, there is no
+                  limit!
+                </h2>
               </div>
             </div>
           </div>
@@ -141,7 +149,9 @@ function index() {
                       </div>
                       <div className="text-box float-right">
                         <p>
-                        Reach out so we can get all your details sorted out! Fill this contact form so we can answer any questions and let's get started
+                          Reach out so we can get all your details sorted out!
+                          Fill this contact form so we can answer any questions
+                          and let&apos;s get started
                         </p>
                       </div>
                     </div>
