@@ -75,15 +75,13 @@ function Index() {
           </div>
         </div>
 
-        <div className="container my-0 my-lg-5 pading-res">
+        <div className="container my-5 my-lg-5 pading-res">
           <div className="row">
             <div className="col-12 col-md-8 pb-4 text-center m-auto">
               <h1>{singleListing?.name}</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                nobis illo repudiandae mollitia eum sed esse amet dolores
-                accusamus vero iusto accusantium veniam in deserunt laborum
-                sapiente placeat, quae eveniet?
+                We combine cutting-edge technologies within a dynamic space that
+                offers endless possibilities for entertainment.
               </p>
             </div>
           </div>

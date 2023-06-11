@@ -38,22 +38,26 @@ function Index() {
                 <div className="content-column col-md-6 col-sm-12 col-xs-12">
                   <div className="inner-column">
                     <div className="sec-title">
-                      <div className="title">Never-ending possibilities</div>
+                      <div className="title">
+                        Uniquely Designed, Private, Multi-Purpose, Entertainment
+                        Venue
+                      </div>
                       <h2>
-                        We Are The Leader In <br /> The Interiores
+                        An event space where you can have a private social
+                        immersive experience
                       </h2>
                     </div>
                     <div className="text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the
-                      industry&apos;s standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book. It has survived
-                      not only five centuries
+                      Immersive experiences submerge a person in a new or
+                      augmented world, making ordinary life more interesting and
+                      fulfilling through technology. This is perfect for any
+                      gathering with endless possibilities. Our space is
+                      functional to provide an entertaining environment for
+                      almost any event, including:
                     </div>
-                    <a href="about.html" className="theme-btn btn-style-three">
+                    <Link href="/about" className="theme-btn btn-style-three">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -85,7 +89,9 @@ function Index() {
             </div>
           </section>
           <h2 className="listing_heading font-bold mb-6 text-center mb-5">
-            <strong className="text-white">A space for every moment</strong>
+            <strong className="text-white">
+              At 123 West Social, the sky is the limit. Wait, there is no limit!
+            </strong>
           </h2>
           <section>
             <div className="container">
@@ -93,7 +99,11 @@ function Index() {
                 {spaces &&
                   spaces.map((item, i) => (
                     <div key={i} className=" col-md-4 col-12">
-                      <Link href={`${item.id}`} className="wrapper">
+                      <Link
+                        href={`${item.id}`}
+                        className="wrapper"
+                        style={{ width: "100%" }}
+                      >
                         {/* <h1>THAILAND</h1> */}
                         <div className="image">
                           <Image
@@ -120,24 +130,45 @@ function Index() {
           <section className="second_about_section">
             <div className="container">
               <div className="sec-title">
-                <span className="title">Our Future Goal</span>
-                <h2 style={{ color: "#121212" }}>
-                  We want to lead in innovation & Technology
-                </h2>
+                <span className="title">
+                  Immersive experiences that put you in the middle of the action
+                </span>
+                <h2 style={{ color: "#121212" }}>How does it work?</h2>
               </div>
               <div className="text">
-                We works on UI/UX and functionality as well so that a plugins
-                comes with proper stucture & stunning looks which suits to your
-                web app & website.We take a small toolkit here and ride it well
-                so that it is fit for your use. One who performs well and looks
-                even better.Here we are trying to give you all kinds of
-                technical content, whether it is related to designing or
-                functionality. We are creating content on a lot of languages and
-                will continue to make it free of cost even if you use it without
-                any problem. Which is a very important thing.Here you can also
-                share the content you create, if our technical team likes it,
-                then we will also share it on our blog.In the end, I would say
-                keep visiting our website and enjoy the quality content.
+                123 West showcases the fun applications of cutting-edge
+                technology – it’s about realizing the transformative potential
+                of immersive experiences through personalized spaces
+              </div>
+              <div className="text">
+                Immersive technology can be used to create a variety of
+                experiences; we want to focus on providing a space that can
+                morph into the atmosphere that suits your event and meets your
+                desires. The space is designed to create an environment where
+                people can interact with each other and have a shared experience
+                that takes reality to the next level. There’s nothing like
+                feeling you&apos;re someplace else without ever leaving your
+                spot.
+              </div>
+              <div className="text">
+                123 West Social allows you to be anywhere in the world without
+                traveling. It offers the possibility to create the ideal
+                atmosphere to complement your event or gathering.
+              </div>
+              <div className="text">
+                Immersive experiences are crucial features of virtual reality
+                technology. Over the last few years, these have become more
+                mainstream as people search for new ways of entertainment and
+                original spaces that add excitement to their lives. Some of the
+                most popular experiences include &quot; walking around” an
+                environment while feeling like you’re there.
+              </div>
+              <div className="text">
+                In case you didn&apos;t know, this technology is used in theme
+                parks and other attractions where people can explore jungles,
+                take rides on roller coasters, go inside haunted houses, etc.
+                With the use of illumination projection mapping on walls and
+                floors, you can have a 360-degree view of your ideal location.
               </div>
             </div>
           </section>
