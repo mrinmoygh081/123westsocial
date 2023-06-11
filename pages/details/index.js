@@ -1,8 +1,54 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React from "react";
+import { calDaysDiff } from "@/lib/utils/calDaysDiff";
+import React, { useEffect, useState } from "react";
 
-function index() {
+function Index() {
+  const [dates, setDates] = useState({
+    start: "",
+    end: "",
+  });
+  const [form, setForm] = useState({
+    startDate: "",
+    endDate: "",
+    name: "",
+    phone: "",
+    email: "",
+    address: "",
+    numOfGuests: "",
+    days: "",
+  });
+
+  console.log(form);
+  console.log(dates);
+
+  const GoToPayment = () => {
+    let validation = checkBookingData(form);
+    if (validation) {
+      push({ pathname: "/payments", query: form });
+    }
+  };
+
+  useEffect(() => {
+    (function () {
+      if (dates?.start !== "" || dates?.start !== undefined) {
+        setForm({ ...form, startDate: new Date(dates?.start) });
+      }
+      if (dates?.end !== "" || dates?.end !== undefined) {
+        setForm({ ...form, endDate: new Date(dates?.end) });
+      }
+      if (
+        dates?.start !== "" &&
+        dates?.start !== undefined &&
+        dates?.start !== "" &&
+        dates?.end !== undefined
+      ) {
+        let d = calDaysDiff();
+        console.log(d);
+      }
+    })();
+  }, [dates]);
+
   return (
     <>
       <Header />
@@ -184,10 +230,18 @@ function index() {
                         <input
                           type="date"
                           className="checkin_form checkin_form1"
+                          value={dates?.start}
+                          onChange={(e) =>
+                            setDates({ ...dates, start: e.target.value })
+                          }
                         />
                         <input
                           type="date"
                           className="checkin_form checkin_form2"
+                          value={dates?.end}
+                          onChange={(e) =>
+                            setDates({ ...dates, end: e.target.value })
+                          }
                         />
                       </div>
                       {/* <select
@@ -202,34 +256,58 @@ function index() {
                         type="text"
                         className="form-control p-3 my-3"
                         placeholder="Your Name"
+                        value={form?.name}
+                        onChange={(e) =>
+                          setForm({ ...form, name: e.target.value })
+                        }
                       />
                       <input
                         type="text"
                         className="form-control p-3 my-3"
                         placeholder="Your Phone Number"
+                        value={form?.phone}
+                        onChange={(e) =>
+                          setForm({ ...form, phone: e.target.value })
+                        }
                       />
                       <input
                         type="text"
                         className="form-control p-3 my-3"
                         placeholder="Your email"
+                        value={form?.email}
+                        onChange={(e) =>
+                          setForm({ ...form, email: e.target.value })
+                        }
                       />
                       <input
                         type="text"
                         className="form-control p-3 my-3"
                         placeholder="Your Address"
+                        value={form?.address}
+                        onChange={(e) =>
+                          setForm({ ...form, address: e.target.value })
+                        }
                       />
                       <input
-                        type="number"
+                        type="text"
                         className="form-control p-3 my-3"
                         placeholder="Number Of Guests"
+                        value={form?.numOfGuests}
+                        onChange={(e) =>
+                          setForm({ ...form, numOfGuests: e.target.value })
+                        }
                       />
                     </div>
                   </div>
 
                   <div className="btn-box center_btn">
-                    <a href="#" className="theme-btn btn-style-one inner_btn">
+                    <button
+                      type="button"
+                      className="theme-btn btn-style-one inner_btn"
+                      onClick={GoToPayment}
+                    >
                       Book Appointment
-                    </a>
+                    </button>
                   </div>
                 </div>
               </form>
@@ -493,4 +571,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

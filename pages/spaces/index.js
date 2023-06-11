@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import GallerySection from "@/components/GallerySection";
 import Header from "@/components/Header";
 import data from "@/lib/mongo/data";
 import Image from "next/image";
@@ -91,7 +92,7 @@ function Index() {
               <div className="row d-flex justify-content-center">
                 {spaces &&
                   spaces.map((item, i) => (
-                    <Fragment key={i}>
+                    <div key={i} className=" col-md-4 col-12">
                       <Link href={`${item.id}`} className="wrapper">
                         {/* <h1>THAILAND</h1> */}
                         <div className="image">
@@ -110,7 +111,7 @@ function Index() {
                         </div>
                         <h1>$120 per hour</h1>
                       </Link>
-                    </Fragment>
+                    </div>
                   ))}
               </div>
             </div>
@@ -145,44 +146,7 @@ function Index() {
             <strong className="text-white">Gallery Section</strong>
           </h2>
 
-          <section className="pb-5">
-            <div className="container">
-              <div className="row d-flex justify-content-center">
-                <div className="wrapper">
-                  <h1>KOREA</h1>
-                  <div className="image i1"></div>
-                  <div className="details">
-                    <h1>Seoul</h1>
-                    <h2>Ramada Hotel</h2>
-                    <p>3 Days - 2 Nights</p>
-                  </div>
-                  <h1>₹1250</h1>
-                </div>
-
-                <div className="wrapper">
-                  <h1>PHILIPPINES</h1>
-                  <div className="image i1"></div>
-                  <div className="details">
-                    <h1>Boracay Island</h1>
-                    <h2>Surfer&apos;s Home</h2>
-                    <p>3 Days - 2 Nights</p>
-                  </div>
-                  <h1>₹750</h1>
-                </div>
-
-                <div className="wrapper">
-                  <h1>THAILAND</h1>
-                  <div className="image i3"></div>
-                  <div className="details">
-                    <h1>Mae Hong Son</h1>
-                    <h2>Farmer&apos;s Walk</h2>
-                    <p>4 Days - 3 Nights</p>
-                  </div>
-                  <h1>₹750</h1>
-                </div>
-              </div>
-            </div>
-          </section>
+          <GallerySection />
         </div>
 
         <Footer />

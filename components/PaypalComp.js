@@ -3,7 +3,7 @@ import { loadScript } from "@paypal/paypal-js";
 import { toast } from "react-toastify";
 
 function PaypalComp({ bookedFor, price, bookingHandler }) {
-  //   console.log("fd", bookedFor, typeof price);
+  console.log("fd", bookedFor, price);
   const loadPaypal = () => {
     loadScript({
       clientId:
@@ -20,10 +20,10 @@ function PaypalComp({ bookedFor, price, bookingHandler }) {
                 intent: "CAPTURE",
                 purchase_units: [
                   {
-                    description: "Corporate Meetings or annual gatherings",
+                    description: "123 West Social Services",
                     amount: {
                       currency_code: "USD",
-                      value: price,
+                      value: 240,
                     },
                   },
                 ],

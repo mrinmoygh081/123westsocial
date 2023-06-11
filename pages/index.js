@@ -70,13 +70,13 @@ export default function Home() {
         <div className="container ">
           <div className="row my-50 border-dashed ">
             <div className="col-12 col-lg-4">
-              <img src="./images/img (12).jpeg" alt="" />
+              <img src="./images/uploads/dinner.jpg" alt="" />
             </div>
             <div className="col-12 col-lg-4">
-              <img src="./images/img (11).jpeg" alt="" />
+              <img src="./images/uploads/gaming.webp" alt="" />
             </div>
             <div className="col-12 col-lg-4">
-              <img src="./images/img (10).jpeg" alt="" />
+              <img src="./images/uploads/family.jpg" alt="" />
             </div>
           </div>
         </div>

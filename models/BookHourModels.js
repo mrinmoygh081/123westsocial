@@ -28,6 +28,10 @@ const bookHourSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a valid hours"],
   },
+  price: {
+    type: String,
+    required: [true, "Please provide a valid price"],
+  },
 });
 
 const bookHourModel =

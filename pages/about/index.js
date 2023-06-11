@@ -54,23 +54,18 @@ function index() {
                 </div>
               </div>
               <div className="image-column col-lg-6 col-md-12 col-sm-12">
-                <div className="inner-column wow fadeInLeft">
+                <div className="wow fadeInLeft">
                   <div className="author-desc">
                     <h2>A space for every moment</h2>
                   </div>
-                  <figure className="image-1">
-                    <a
-                      href="#"
-                      className="lightbox-image"
-                      data-fancybox="images"
-                    >
-                      <img
-                        title="Rahul Kumar Yadav"
-                        src="./images/img (12).jpeg"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/R2tB5jEj6Ys"
+                    title="123 West Social"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>

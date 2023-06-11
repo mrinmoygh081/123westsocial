@@ -333,7 +333,6 @@ a {
   color: #6e6e6e;
   font-weight: 500;
   font-size: 18px;
-  font-size: 1.8rem;
 }
 
 .nav_btm_part {
@@ -2719,6 +2718,7 @@ img.mfp-img {
 
 .hotel_ratiog h4 {
   font-weight: 600;
+  color: #181c32;
 }
 
 .card_payments {
@@ -2733,6 +2733,7 @@ img.mfp-img {
 .card_payments h2 {
   text-align: center;
   font-size: 26px;
+  color: #181c32;
 }
 
 /* media Query globally */

@@ -19,6 +19,7 @@ const handler = async (req, res) => {
       address,
       numOfGuests,
       hours,
+      price: 120 * hours,
     });
     // res.status(201).json({ status: "created" });
 
