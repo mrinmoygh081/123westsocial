@@ -8,7 +8,12 @@ function index() {
     <>
       <Header />
       <section>
-        <div className="about_us_banner">
+        <div
+          className="about_us_banner"
+          style={{
+            backgroundImage: `url("/images/page_banner_about.jpeg")`,
+          }}
+        >
           <div className="mb-5">
             <h2 className="listing_heading font-bold mb-6 text-center mb-5">
               <strong className="text-white">

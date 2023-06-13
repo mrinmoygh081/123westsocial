@@ -49,6 +49,9 @@ function Header() {
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
+                    <Link href="/gallery">Gallery</Link>
+                  </li>
+                  <li>
                     <Link href="/details">Loft Appartment</Link>
                   </li>
                   <li>

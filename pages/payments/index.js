@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PaypalComp from "@/components/PaypalComp";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -78,6 +79,18 @@ function Index() {
             >
               Book Now
             </button> */}
+            <div className="my-5 text-center">
+              <h3>Please Scan To Pay</h3>
+              <Image
+                src={require("@public/images/qr_code.jpeg")}
+                width={300}
+                height={600}
+                alt=""
+                style={{ margin: "auto" }}
+              />
+              <h4>Or</h4>
+            </div>
+
             <PaypalComp
               bookedFor={booking?.space}
               price={booking?.hours * 120}

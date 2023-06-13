@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,10 +9,13 @@ export default function Home() {
 
       <main>
         <div className="relative overflow-hidden w-100 vh-100">
-          <img
+          <Image
             className="absolute img-fluid banner_image"
             data-speed="auto"
-            src="./images/banner-image1.jpg"
+            src="/images/img (12).jpeg"
+            width={2000}
+            height={2000}
+            alt=""
           />
           <div className="section-center">
             <div className="search_container">
@@ -35,21 +39,21 @@ export default function Home() {
                           </div>
                           <div className="col-md-4">
                             <div className="form-group">
-                              <span className="form-label">Where?</span>
-                              <input
-                                className="form-control"
-                                type="text"
-                                placeholder="Location"
-                              />
-                            </div>
-                          </div>
-                          <div className="col-md-2">
-                            <div className="form-group">
                               <span className="form-label">When?</span>
                               <input
                                 className="form-control"
-                                type="text"
+                                type="date"
                                 placeholder="Date"
+                              />
+                            </div>
+                          </div>
+                          <div className="col-md-4">
+                            <div className="form-group">
+                              <span className="form-label">Hours?</span>
+                              <input
+                                className="form-control"
+                                type="text"
+                                placeholder="No of hours"
                               />
                             </div>
                           </div>
@@ -76,7 +80,7 @@ export default function Home() {
               <img src="./images/uploads/gaming.webp" alt="" />
             </div>
             <div className="col-12 col-lg-4">
-              <img src="./images/uploads/family.jpg" alt="" />
+              <img src="./images/home_page3.jpeg" alt="" />
             </div>
           </div>
         </div>
@@ -92,7 +96,7 @@ export default function Home() {
         <div className="container ">
           <div className="row my-50 border-dashed ">
             <div className="col-12 col-lg-4">
-              <img src="./images/img (12).jpeg" alt="" />
+              <img src="./images/img (3).jpeg" alt="" />
             </div>
             <div className="col-12 col-lg-4">
               <img src="./images/img (11).jpeg" alt="" />
@@ -250,25 +254,15 @@ export default function Home() {
         <div className="horr-hover-slider">
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (12).jpeg" alt="" />
-            <span className="h2 horr-hover-slider-link-heading">Main Demo</span>
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (11).jpeg" alt="" />
-            <span className="h2 horr-hover-slider-link-heading">
-              Studio Demo
-            </span>
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (10).jpeg" alt="" />
-            <span className="h2 horr-hover-slider-link-heading">
-              Gamer Demo
-            </span>
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (9).jpeg" alt="" />
-            <span className="h2 horr-hover-slider-link-heading">
-              Blogger Demo
-            </span>
           </a>
         </div>
       </main>

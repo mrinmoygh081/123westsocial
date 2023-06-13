@@ -20,7 +20,12 @@ function Index() {
       <Header />
 
       <div id="scrollsmoother-container">
-        <div className="about_us_banner">
+        <div
+          className="about_us_banner"
+          style={{
+            backgroundImage: `url("/images/page_banner_space.jpeg")`,
+          }}
+        >
           <div>
             <h2 className="listing_heading font-bold mb-6 text-center mb-5">
               <strong className="text-white">
@@ -69,7 +74,7 @@ function Index() {
                   >
                     <div className="image">
                       <Image
-                        src={require("@public/images/about.jpg")}
+                        src={require("@public/images/space1.jpeg")}
                         alt=""
                         width="1000"
                         height="1000"
@@ -172,12 +177,6 @@ function Index() {
               </div>
             </div>
           </section>
-
-          <h2 className="listing_heading font-bold mb-6 text-center mb-5">
-            <strong className="text-white">Gallery Section</strong>
-          </h2>
-
-          <GallerySection />
         </div>
 
         <Footer />

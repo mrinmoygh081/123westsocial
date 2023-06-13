@@ -65,7 +65,6 @@ a {
 }
 
 .paralax_text {
-  height: 600px;
   padding: 0px;
   background: #fff;
 }
@@ -291,7 +290,7 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 45px;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   line-height: 54px;
   line-height: 5.4rem;
   font-family: var(--heading-font);
@@ -699,7 +698,7 @@ footer p,
 footer address {
   color: #f2f2f2;
   line-height: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 footer .fa-copyright {
@@ -2730,7 +2729,9 @@ img.mfp-img {
   margin: auto;
 }
 
-.card_payments h2 {
+.card_payments h2,
+.card_payments h4,
+.card_payments h3 {
   text-align: center;
   font-size: 26px;
   color: #181c32;
