@@ -2736,6 +2736,10 @@ img.mfp-img {
   font-size: 26px;
   color: #181c32;
 }
+.select_form {
+  padding: 10px;
+  width: 100%;
+}
 
 /* media Query globally */
 @media only screen and (max-width: 1023px) {

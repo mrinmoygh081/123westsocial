@@ -1,8 +1,29 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import data from "@/lib/mongo/data";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function Home() {
+  const { push } = useRouter();
+  const [search, setSearch] = useState({
+    what: "",
+    when: "",
+    hours: "",
+  });
+
+  console.log(search);
+
+  const handleSearch = () => {
+    if (search?.what !== "") {
+      push(`/${search?.what}`);
+    } else {
+      toast.error("Please select what you are you planning?");
+    }
+  };
+
   return (
     <>
       <Header />
@@ -12,8 +33,8 @@ export default function Home() {
           <Image
             className="absolute img-fluid banner_image"
             data-speed="auto"
-            src="/images/img (12).jpeg"
-            width={2000}
+            src="/images/img (11).jpeg"
+            width={3000}
             height={2000}
             alt=""
           />
@@ -21,51 +42,73 @@ export default function Home() {
             <div className="search_container">
               <div className="row m-auto">
                 <div className="booking-form">
-                  <form>
-                    <div className="row no-margin">
-                      <div className="col-md-8 px-5">
-                        <div className="row no-margin">
-                          <div className="col-md-4">
-                            <div className="form-group">
-                              <span className="form-label">
-                                What are you planning?
-                              </span>
-                              <input
-                                className="form-control"
-                                placeholder="Enter your activity"
-                                type="text"
-                              />
-                            </div>
-                          </div>
-                          <div className="col-md-4">
-                            <div className="form-group">
-                              <span className="form-label">When?</span>
-                              <input
-                                className="form-control"
-                                type="date"
-                                placeholder="Date"
-                              />
-                            </div>
-                          </div>
-                          <div className="col-md-4">
-                            <div className="form-group">
-                              <span className="form-label">Hours?</span>
-                              <input
-                                className="form-control"
-                                type="text"
-                                placeholder="No of hours"
-                              />
-                            </div>
+                  <div className="row no-margin">
+                    <div className="col-md-8 px-5">
+                      <div className="row no-margin">
+                        <div className="col-lg-4 col-12">
+                          <div className="form-group">
+                            <span className="form-label">
+                              What are you planning?
+                            </span>
+                            {/* <input
+                              className="form-control"
+                              placeholder="Enter your activity"
+                              type="text"
+                            /> */}
+                            <select
+                              value={search?.what}
+                              onChange={(e) =>
+                                setSearch({ ...search, what: e.target.value })
+                              }
+                              className="select_form"
+                            >
+                              <option value="">Choose your option</option>
+                              {data?.listings.map((item, index) => (
+                                <option value={item.id} key={index}>
+                                  {item.name}
+                                </option>
+                              ))}
+                            </select>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="form-btn">
-                          <button className="submit-btn">Book Now</button>
+                        <div className="col-lg-4 col-12">
+                          <div className="form-group">
+                            <span className="form-label">When?</span>
+                            <input
+                              className="form-control"
+                              type="date"
+                              placeholder="Date"
+                              value={search?.when}
+                              onChange={(e) =>
+                                setSearch({ ...search, when: e.target.value })
+                              }
+                            />
+                          </div>
+                        </div>
+                        <div className="col-lg-4 col-12">
+                          <div className="form-group">
+                            <span className="form-label">Hours?</span>
+                            <input
+                              className="form-control"
+                              type="text"
+                              placeholder="No of hours"
+                              value={search?.hours}
+                              onChange={(e) =>
+                                setSearch({ ...search, hours: e.target.value })
+                              }
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </form>
+                    <div className="col-md-4 col-12">
+                      <div className="form-btn">
+                        <button className="submit-btn" onClick={handleSearch}>
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,7 +123,7 @@ export default function Home() {
               <img src="./images/uploads/gaming.webp" alt="" />
             </div>
             <div className="col-12 col-lg-4">
-              <img src="./images/home_page3.jpeg" alt="" />
+              <img src="./images/home_page4.jpeg" alt="" />
             </div>
           </div>
         </div>
@@ -96,10 +139,10 @@ export default function Home() {
         <div className="container ">
           <div className="row my-50 border-dashed ">
             <div className="col-12 col-lg-4">
-              <img src="./images/img (3).jpeg" alt="" />
+              <img src="./images/home_page5.jpeg" alt="" />
             </div>
             <div className="col-12 col-lg-4">
-              <img src="./images/img (11).jpeg" alt="" />
+              <img src="./images/hero_img2.jpeg" alt="" />
             </div>
             <div className="col-12 col-lg-4">
               <img src="./images/img (10).jpeg" alt="" />
@@ -256,7 +299,11 @@ export default function Home() {
             <img decoding="async" src="./images/img (12).jpeg" alt="" />
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
-            <img decoding="async" src="./images/img (11).jpeg" alt="" />
+            <img
+              decoding="async"
+              src="./images/page_banner_gallery.jpeg"
+              alt=""
+            />
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (10).jpeg" alt="" />

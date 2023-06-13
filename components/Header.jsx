@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import logo from "@public/images/logo.jpeg";
 import data from "@/lib/mongo/data";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
@@ -16,6 +17,9 @@ function Header() {
 
   return (
     <>
+      <Head>
+        <title>123 West Social</title>
+      </Head>
       <header className="large_device_menu">
         <div className="logo" id="logo">
           <Link href="/">
