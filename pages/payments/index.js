@@ -13,8 +13,6 @@ function Index() {
     setBooking(query);
   }, [query]);
 
-  console.log(booking);
-
   const bookingHandler = async () => {
     let data = await postAPI("add_book_hour", form, null);
     if (data?.status) {
@@ -67,10 +65,15 @@ function Index() {
               Number Of Guests: <strong>{booking?.numOfGuests}</strong>
             </p>
             <p>
-              Booked For: <strong>{booking?.hours} hours</strong>
+              Booked For:{" "}
+              <strong>{booking?.hours && `${booking?.hours}hours`}</strong>
+              <strong>{booking?.days && `${booking?.days}days`}</strong>
             </p>
+
             <p>
-              Costing: <strong>${booking?.hours * 120}</strong>
+              Costing:{" "}
+              <strong>{booking?.hours && `$${booking?.hours * 120}`}</strong>
+              <strong>{booking?.days && `$${booking?.days * 120}`}</strong>
             </p>
             {/* <button
               type="button"

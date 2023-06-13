@@ -14,11 +14,10 @@ export default function Home() {
     hours: "",
   });
 
-  console.log(search);
-
+  console.l;
   const handleSearch = () => {
     if (search?.what !== "") {
-      push(`/${search?.what}`);
+      push({ pathname: `/${search?.what}`, query: search });
     } else {
       toast.error("Please select what you are you planning?");
     }

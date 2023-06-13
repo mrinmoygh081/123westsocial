@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 
 function Index() {
   const { query, push } = useRouter();
-  const { id } = query;
+  const { id, when, hours } = query;
   const [singleListing, setSingleListing] = useState(null);
   const [form, setForm] = useState({
     date: "",
@@ -21,6 +21,16 @@ function Index() {
     numOfGuests: "",
     hours: "",
   });
+
+  useEffect(() => {
+    if (when != "") {
+      setForm({ ...form, date: when });
+    }
+    if (hours != "") {
+      setForm({ ...form, hours: hours });
+    }
+  }, [when, hours]);
+
   // const cleanForm = () => {
   //   setForm({
   //     date: "",

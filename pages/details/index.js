@@ -1,16 +1,19 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { calDaysDiff } from "@/lib/utils/calDaysDiff";
+import { checkBookingDaysData } from "@/lib/utils/chackBookingData";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 function Index() {
+  const { push } = useRouter();
   const [dates, setDates] = useState({
     start: "",
     end: "",
   });
   const [form, setForm] = useState({
-    startDate: "",
-    endDate: "",
+    date: "",
     name: "",
     phone: "",
     email: "",
@@ -19,32 +22,28 @@ function Index() {
     days: "",
   });
 
-  console.log(form);
-  console.log(dates);
-
   const GoToPayment = () => {
-    let validation = checkBookingData(form);
+    let validation = checkBookingDaysData(form);
     if (validation) {
-      push({ pathname: "/payments", query: form });
+      if (form?.days && form?.days > 0) {
+        push({ pathname: "/payments", query: form });
+      } else {
+        toast.error("Please select booking dates correctly");
+      }
     }
   };
 
   useEffect(() => {
     (function () {
-      if (dates?.start !== "" || dates?.start !== undefined) {
-        setForm({ ...form, startDate: new Date(dates?.start) });
-      }
-      if (dates?.end !== "" || dates?.end !== undefined) {
-        setForm({ ...form, endDate: new Date(dates?.end) });
-      }
+      const { start, end } = dates;
       if (
-        dates?.start !== "" &&
-        dates?.start !== undefined &&
-        dates?.start !== "" &&
-        dates?.end !== undefined
+        start !== "" &&
+        start !== undefined &&
+        start !== "" &&
+        end !== undefined
       ) {
-        let d = calDaysDiff();
-        console.log(d);
+        let days = calDaysDiff(start, end);
+        setForm({ ...form, days, date: start });
       }
     })();
   }, [dates]);
@@ -237,7 +236,10 @@ function Index() {
                           className="checkin_form checkin_form1"
                           value={dates?.start}
                           onChange={(e) =>
-                            setDates({ ...dates, start: e.target.value })
+                            setDates({
+                              ...dates,
+                              start: e.target.value,
+                            })
                           }
                         />
                         <input
