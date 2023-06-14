@@ -31,7 +31,7 @@ export default function Home() {
           <Image
             className="absolute img-fluid banner_image"
             data-speed="auto"
-            src="/images/img (11).jpeg"
+            src="/images/123-banner.jpeg"
             width={3000}
             height={2000}
             alt=""
@@ -294,7 +294,7 @@ export default function Home() {
 
         <div className="horr-hover-slider">
           <a target="_blank" href="#" className="horr-hover-slider-link">
-            <img decoding="async" src="./images/img (12).jpeg" alt="" />
+            <img decoding="async" src="./images/123-waysocial-1.jpeg" alt="" />
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img
@@ -304,7 +304,7 @@ export default function Home() {
             />
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
-            <img decoding="async" src="./images/img (10).jpeg" alt="" />
+            <img decoding="async" src="./images/123-waysocial-2.jpeg" alt="" />
           </a>
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (9).jpeg" alt="" />
