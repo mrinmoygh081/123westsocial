@@ -14,7 +14,6 @@ export default function Home() {
     hours: "",
   });
 
-  console.l;
   const handleSearch = () => {
     if (search?.what !== "") {
       push({ pathname: `/${search?.what}`, query: search });
@@ -116,7 +115,7 @@ export default function Home() {
         <div className="container ">
           <div className="row my-50 border-dashed ">
             <div className="col-12 col-lg-4">
-              <img src="./images/uploads/dinner.jpg" alt="" />
+              <img src="./images/gallery/26.jpg" alt="" />
             </div>
             <div className="col-12 col-lg-4">
               <img src="./images/uploads/gaming.webp" alt="" />

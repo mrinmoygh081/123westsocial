@@ -345,7 +345,7 @@ function Index() {
                       <h5>
                         A host is required to be present for all events. <br />
                         <span>
-                          Charged at $20/hr. The fee may be waived for bookings
+                          Charged at $125/hr. The fee may be waived for bookings
                           during regular operating hours.
                         </span>
                       </h5>
@@ -355,10 +355,8 @@ function Index() {
                     <div>
                       <h4>Other costs to consider</h4>
                       <h5>
-                        Bartender: A certified bartender is required to dispense
-                        all alcohol <br />
                         Cleaning Service: All events will require a cleaning fee
-                        of $185 per booking. <br />
+                        of $150 per booking. <br />
                         <span>
                           $150/hr with a 4-hour minimum also includes a deposit
                           of $150

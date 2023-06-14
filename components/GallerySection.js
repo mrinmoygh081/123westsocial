@@ -294,18 +294,6 @@ function GallerySection() {
                 />
               </div>
             </div>
-
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
-                  src={require("@public/images/gallery/27.jpg")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
             <div className="col-12 col-md-4">
               <div className="wrapper" style={{ width: "100%" }}>
                 <Image
@@ -339,29 +327,6 @@ function GallerySection() {
                 />
               </div>
             </div>
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
-                  src={require("@public/images/gallery/31.jpg")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
-                  src={require("@public/images/gallery/32.jpg")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
-
             <div className="col-12 col-md-4">
               <div className="wrapper w-100">
                 <Image
@@ -454,17 +419,6 @@ function GallerySection() {
               <div className="wrapper" style={{ width: "100%" }}>
                 <Image
                   src={require("@public/images/gallery/40.jpg")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
-                  src={require("@public/images/gallery/41.jpeg")}
                   alt=""
                   width="1000"
                   height="1000"
