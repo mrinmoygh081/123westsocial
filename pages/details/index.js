@@ -343,10 +343,7 @@ function Index() {
                       <h4>Host Fee</h4>
                       <h5>
                         A host is required to be present for all events. <br />
-                        <span>
-                          Charged at $125/hr. The fee may be waived for bookings
-                          during regular operating hours.
-                        </span>
+                        <span>Charged at $125 with a 4 hours minimum.</span>
                       </h5>
                     </div>
                   </div>
@@ -356,10 +353,6 @@ function Index() {
                       <h5>
                         Cleaning Service: All events will require a cleaning fee
                         of $150 per booking. <br />
-                        <span>
-                          $150/hr with a 4-hour minimum also includes a deposit
-                          of $150
-                        </span>
                       </h5>
                     </div>
                   </div>
