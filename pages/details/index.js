@@ -62,8 +62,7 @@ function Index() {
           <div className="mb-5">
             <h2 className="listing_heading font-bold mb-6 text-center mb-5">
               <strong className="text-white">
-                Find your creative space in <br />
-                your place
+                Uniquely designed, private, multi-purpose, entertainment venue.
               </strong>
             </h2>
           </div>

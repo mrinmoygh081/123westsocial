@@ -29,8 +29,8 @@ function Index() {
           <div>
             <h2 className="listing_heading font-bold mb-6 text-center mb-5">
               <strong className="text-white">
-                Find your creative space in <br />
-                your&apos;s place
+                A space for <br />
+                every moment
               </strong>
             </h2>
           </div>

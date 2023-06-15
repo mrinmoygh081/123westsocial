@@ -12,8 +12,8 @@ function index() {
           <div className="mb-5">
             <h2 className="listing_heading font-bold mb-6 text-center mb-5">
               <strong className="text-white">
-                Find your creative space in <br />
-                your&apos;s place
+                Get in touch with us <br /> so we can start planning your next
+                event!
               </strong>
             </h2>
           </div>

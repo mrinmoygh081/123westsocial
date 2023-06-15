@@ -32,18 +32,6 @@ function GallerySection() {
             <div className="col-12 col-md-4">
               <div className="wrapper" style={{ width: "100%" }}>
                 <Image
-                  src={require("@public/images/gallery/3.jpeg")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
-
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
                   src={require("@public/images/gallery/8.jpeg")}
                   alt=""
                   width="1000"
@@ -155,28 +143,6 @@ function GallerySection() {
               <div className="wrapper" style={{ width: "100%" }}>
                 <Image
                   src={require("@public/images/gallery/14.jpeg")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
-                  src={require("@public/images/gallery/15.png")}
-                  alt=""
-                  width="1000"
-                  height="1000"
-                  quality="100"
-                />
-              </div>
-            </div>
-            <div className="col-12 col-md-4">
-              <div className="wrapper" style={{ width: "100%" }}>
-                <Image
-                  src={require("@public/images/gallery/16.webp")}
                   alt=""
                   width="1000"
                   height="1000"
