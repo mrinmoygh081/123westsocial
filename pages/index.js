@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import data from "@/lib/mongo/data";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -309,6 +310,66 @@ export default function Home() {
           <a target="_blank" href="#" className="horr-hover-slider-link">
             <img decoding="async" src="./images/img (9).jpeg" alt="" />
           </a>
+        </div>
+
+        <div className="container ">
+          <div className="row py-5">
+            <div className="col-12 col-lg-5">
+              <Image
+                alt=""
+                id="logo"
+                width={600}
+                height={700}
+                src={require("@public/images/footer_des.jpeg")}
+              />
+            </div>
+            <div className="col-12 col-lg-7">
+              <div
+                className="sec-title"
+                style={{ backgroundColor: "#fff", padding: "10px" }}
+              >
+                <h2 style={{ color: "#121212", fontSize: "60px" }}>
+                  A unique experience for your next event.
+                </h2>
+                <div
+                  className="text"
+                  style={{ color: "#121212", backgroundColor: "#fff" }}
+                >
+                  Whether you’re looking for something to cool the heat of the
+                  summer or want to escape the confines of your desk, 123 West
+                  Social is for everyone. Step into our space, grab a
+                  refreshment and make your way into a virtual world. We
+                  showcase technology that transforms entertainment, and
+                  possibilities into a unique experience. <br />
+                  123 West Social has been designed to create a more immersive
+                  experience, where people can be transported to another time or
+                  place. This is done through illusion by using technology that
+                  will change the appearance of the space to a partial
+                  simulation of your ideal location. <br />
+                  We offer a range of options to host various events and ensure
+                  it’s all specific to your needs. Whether you want to throw a
+                  party for your child’s birthday or book an event for your
+                  company, we have something for everyone. <br />
+                  <p className="text-center">
+                    <b>Click on PEERSPACE to know more.</b>
+                  </p>
+                  <Link
+                    href="https://peerspace.app.link/VNCAa1gHEAb"
+                    target="_blank"
+                    className="d-flex justify-content-center"
+                  >
+                    <Image
+                      alt=""
+                      id="logo"
+                      width={100}
+                      height={100}
+                      src={require("@public/images/footer_logo.jpeg")}
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <Footer />
