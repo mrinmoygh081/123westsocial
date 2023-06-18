@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import PaypalComp from "@/components/PaypalComp";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useState, useRef } from "react";
+import { redirect } from "next/navigation";
 function Index() {
   const { query } = useRouter();
   const [booking, setBooking] = useState(null);
@@ -93,12 +93,25 @@ function Index() {
               />
               <h4>Or</h4>
             </div>
-
-            <PaypalComp
-              bookedFor={booking?.space}
-              price={booking?.hours * 120}
-              bookingHandler={bookingHandler}
-            />
+            <form method="post" action="http://localhost:4005/pay">
+              <input type="hidden" name="bookedFor" value={booking?.space} />
+              <input type="hidden" name="name" value={booking?.name} />
+              <input type="hidden" name="date" value={booking?.date} />
+              <input type="hidden" name="phone" value={booking?.phone} />
+              <input type="hidden" name="email" value={booking?.email} />
+              <input type="hidden" name="address" value={booking?.address} />
+              <input
+                type="hidden"
+                name="numOfGuests"
+                value={booking?.numOfGuests}
+              />
+              <input type="hidden" name="hours" value={booking?.hours} />
+              <input type="hidden" name="price" value={booking?.hours * 120} />
+              <input type="hidden" name="item" value="room-book" />
+              <button className="test-center btn btn-success bth-large">
+                Paynow
+              </button>
+            </form>
           </div>
         </div>
 
