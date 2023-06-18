@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "npm run build && rsync --exlude=.git -azP . mrinmoy@143.198.152.40:/home/mrinmoy/123westsocial",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
