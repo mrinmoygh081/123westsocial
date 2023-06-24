@@ -66,7 +66,7 @@ function index() {
                   <iframe
                     width="100%"
                     height="315"
-                    src="https://www.youtube.com/embed/R2tB5jEj6Ys"
+                    src="https://www.youtube.com/embed/PuDAah9LRgE"
                     title="123 West Social"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

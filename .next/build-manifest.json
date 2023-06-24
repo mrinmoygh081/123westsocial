@@ -35,15 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/gallery": [
+    "/about": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/gallery.js"
-    ],
-    "/spaces": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/spaces.js"
+      "static/chunks/pages/about.js"
     ]
   },
   "ampFirstPages": []
