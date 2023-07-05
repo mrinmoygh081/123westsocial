@@ -9,6 +9,9 @@ function Success() {
 
   const { paymentId } = query;
 
+  const goToHome = () => {
+    push({ pathname: "/" });
+  };
   return (
     <>
       <Header />
@@ -35,7 +38,7 @@ function Success() {
             <button
               type="button"
               className="theme-btn btn-style-one inner_btn"
-              onClick={push({ pathname: "/" })}
+              onClick={goToHome}
             >
               Go Back To Home
             </button>

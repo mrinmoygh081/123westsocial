@@ -1,0 +1,22 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/[id]": "pages/[id].html",
+  "/about": "pages/about.html",
+  "/admin/dashboard": "pages/admin/dashboard.html",
+  "/admin": "pages/admin.html",
+  "/api/add_book_hour": "pages/api/add_book_hour.js",
+  "/api/get_book_hour": "pages/api/get_book_hour.js",
+  "/api/seed": "pages/api/seed.js",
+  "/api/set_space": "pages/api/set_space.js",
+  "/api/spaces": "pages/api/spaces.js",
+  "/contact": "pages/contact.html",
+  "/gallery": "pages/gallery.html",
+  "/details": "pages/details.html",
+  "/": "pages/index.html",
+  "/pay-api/success": "pages/pay-api/success.html",
+  "/payments": "pages/payments.html",
+  "/spaces": "pages/spaces.html",
+  "/404": "pages/404.html"
+}
