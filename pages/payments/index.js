@@ -93,7 +93,11 @@ function Index() {
               />
               <h4>Or</h4>
             </div>
-            <form method="post" action="http://localhost:4005/pay">
+            <form
+              method="post"
+              action="https://pay.123westsocial.com/pay-api/pay"
+              className="text-center"
+            >
               <input type="hidden" name="bookedFor" value={booking?.space} />
               <input type="hidden" name="name" value={booking?.name} />
               <input type="hidden" name="date" value={booking?.date} />

@@ -20,12 +20,14 @@ function Index() {
     address: "",
     numOfGuests: "",
     days: "",
+    space: "Loft Appartment",
+    spaceId: "100",
   });
 
   const GoToPayment = () => {
     let validation = checkBookingDaysData(form);
     if (validation) {
-      if (form?.days && form?.days > 0) {
+      if (form?.days && form?.days > 0 && form?.days !== "") {
         push({ pathname: "/payments", query: form });
       } else {
         toast.error("Please select booking dates correctly");
@@ -43,7 +45,9 @@ function Index() {
         end !== undefined
       ) {
         let days = calDaysDiff(start, end);
-        setForm({ ...form, days, date: start });
+        if (days) {
+          setForm({ ...form, days, date: start });
+        }
       }
     })();
   }, [dates]);
